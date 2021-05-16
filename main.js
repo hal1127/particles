@@ -51,9 +51,10 @@ var Canvas = /** @class */ (function () {
         for (var i = 0; i < 1; i++) {
             var circle_v = [0, 0];
             var circle = new createjs.Shape();
-            var circle_life = 100;
-            var circle_size = Math.random() * 30;
-            if (circle_size >= 29.9)
+            var circle_life = 150;
+            var max_size = 50 * 720 / this.width;
+            var circle_size = Math.random() * max_size;
+            if (circle_size >= max_size * 0.98)
                 circle_size *= 3;
             if (Math.random() < 0.7) {
                 circle.graphics
