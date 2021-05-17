@@ -73,7 +73,7 @@ class Canvas {
       let circle_life = 150
       let max_size = 50*720/this.width;
       let circle_size = Math.random()*max_size
-      if (circle_size >= max_size*0.98) circle_size *= 3
+      if (circle_size >= max_size*0.995) circle_size *= 3
 
       if (Math.random() < 0.7) {
         circle.graphics
